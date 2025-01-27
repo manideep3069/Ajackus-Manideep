@@ -134,8 +134,8 @@ This project is licensed under the MIT License.
 
 ## Contact
 For questions or feedback, feel free to contact:
-- **Author**: Manideep Gorla
-- **Email**: manideep@example.com
+- **Author**: Maruthi Manideep Gorla
+- **Email**: maruthimanideepgorla@gmail.com
 - **GitHub**: [manideep3069](https://github.com/manideep3069)
 
 ---
