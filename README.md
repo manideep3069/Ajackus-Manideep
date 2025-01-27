@@ -1,74 +1,142 @@
-<<<<<<< HEAD
-# Ajackus-Manideep
-=======
-# Getting Started with Create React App
+# User Management Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive web application designed for managing users. It allows users to view, add, edit, and delete user details in an intuitive and interactive dashboard interface.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### Core Functionalities
+1. **View Users**:
+   - Displays a list of users with details such as ID, First Name, Last Name, Email, and Department.
+   - Integrated with pagination for seamless navigation of large datasets.
 
-### `npm start`
+2. **Add Users**:
+   - Users can add new entries via a modal form.
+   - Added rows are highlighted with a green blinking effect for better visibility.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. **Edit Users**:
+   - Edit user details through a pre-filled modal form.
+   - Edited rows are highlighted with a yellow blinking effect for user feedback.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. **Delete Users**:
+   - Provides a confirmation prompt before deletion.
+   - Rows marked for deletion blink in red for brief periods before being removed.
 
-### `npm test`
+### Additional Features
+- **Pagination Navigation**:
+   - Includes clickable page numbers for easy navigation.
+   - Dynamically adapts to the number of pages in the dataset.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Form Validation**:
+   - Ensures all input fields are filled and email addresses are valid.
+   - Displays inline error messages or alerts for invalid inputs.
 
-### `npm run build`
+- **Animations and Feedback**:
+   - Smooth transitions and row highlighting improve the user experience.
+   - Hover effects and responsive feedback enhance interactivity.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Error Handling**:
+   - Gracefully handles API errors and displays user-friendly error messages.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Responsive Design**:
+   - Fully optimized for desktop and mobile devices.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies Used
 
-### `npm run eject`
+### Frontend
+- **React.js**: Functional components and hooks for dynamic rendering.
+- **Axios**: For handling HTTP requests.
+- **CSS**: Used for animations, transitions, and styling.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Backend (Mock)
+- **JSONPlaceholder API**: A free online REST API for demonstration purposes.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Prerequisites
+- Node.js and npm installed on your system.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/manideep3069/Ajackus-Manideep.git
+   cd Ajackus-Manideep
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## Learn More
+### Running the Application
+1. Start the development server:
+   ```bash
+   npm start
+   ```
+   The app will be available at `http://localhost:3000`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+2. Build for production:
+   ```bash
+   npm run build
+   ```
+   The build artifacts will be stored in the `build/` directory.
 
 ### Deployment
+- Deploy the app on platforms like **Netlify**, **Vercel**, or **GitHub Pages**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Project Structure
+```
+project-root/
+├── public/
+│   └── index.html  # Main HTML file
+├── src/
+│   ├── components/ # Reusable components
+│   ├── styles/     # CSS stylesheets
+│   ├── App.js      # Main app component
+│   └── index.js    # Entry point
+├── package.json    # Dependencies and scripts
+└── README.md       # Project documentation
+```
 
-### `npm run build` fails to minify
+## Future Enhancements
+1. **Real Backend Integration**:
+   - Replace JSONPlaceholder with a real backend service for persistent data storage.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 50b236f (Initial commit of user management dashboard)
+2. **Advanced Search and Filter**:
+   - Add features to search and filter users by various criteria (e.g., name, department).
+
+3. **Role-Based Access Control**:
+   - Implement different roles for users (e.g., admin, editor).
+
+4. **Unit and Integration Testing**:
+   - Use Jest and Cypress to ensure reliable functionality.
+
+5. **Dynamic Data Schema**:
+   - Allow configuration of columns and fields dynamically based on a provided schema.
+
+## Contributing
+Contributions are welcome! To contribute:
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Make your changes and commit:
+   ```bash
+   git commit -m "Description of changes"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature-name
+   ```
+5. Submit a pull request.
+
+## License
+This project is licensed under the MIT License.
+
+## Contact
+For questions or feedback, feel free to contact:
+- **Author**: Manideep Gorla
+- **Email**: manideep@example.com
+- **GitHub**: [manideep3069](https://github.com/manideep3069)
+
+---
+Thank you for exploring this project! Happy coding! 🚀
